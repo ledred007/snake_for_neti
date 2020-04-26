@@ -3,18 +3,17 @@ A forrás könyvtár szerkezete:
 -----------------------------
 - .classpath és .project eclipse paraméter fájlok
   - fejlesztés során eclipse-et használtam 
-- src/snake - java források
+- src/main/snake - java források
+- src/test/snake - írtam néhány unit tesztet Junit 5-öt használnak
 - src/log4j.xml - logger beállításai
-- src/readme.txt - program információk
+- readme.txt - program információk (ez a fájl)
+- sources.txt - a fordításhoz szükséges forrás lista fájl
 - lib - külső library-k (log4j és derby)
 
 ==================================================================================
 A program fordítása:
 --------------------
 javac  -d ./build -classpath "./lib/log4j-1.2.17.jar;./lib/derby-10.13.1.1.jar" @sources.txt
-
-In build directory -> 
-jar cvf snake.jar *
 
 java -cp snake.jar snake.Main 50 50
 
@@ -26,7 +25,7 @@ elindult a kígyó tartja az irányt.
 
 A program indítása:
 
-java sneak <width> <height>
+snake.Main <width> <height>
 
 10 X 10 - es négyzetnél kisebb játékteret nem fogad el,
 a felső  határ a képernyő mérete paraméterként definiál
@@ -50,6 +49,8 @@ Kivéve a Main üzeneteit hagytam a helyükön, hogy az alap működés
 
 A játék az egyes játékosok adatait lokális Derby adatbázisba menti.
 
+==================================================================================
+Feladat leírás:
 ==================================================================================
 Általános információk:
 ----------------------
