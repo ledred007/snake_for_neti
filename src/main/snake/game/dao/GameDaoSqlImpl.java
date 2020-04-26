@@ -105,7 +105,7 @@ public class GameDaoSqlImpl implements GameDao {
 			}
 		} catch (SQLException e) {
 			logger.debug("DataBase Users table counter error -> ", e);
-			logger.error("DataBase table didn't exist! - Table creation required!");
+			logger.warn("DataBase table didn't exist! - Table creation required!");
 		}
 		return result;
 	}
