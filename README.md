@@ -1,6 +1,6 @@
 # snake_for_neti
 A népszerű kígyós játék megvalósítása Java nyelven.
-==================================================================================
+-----------------------------
 A forrás könyvtár szerkezete:
 -----------------------------
 - .classpath és .project eclipse paraméter fájlok
@@ -12,14 +12,14 @@ A forrás könyvtár szerkezete:
 - sources.txt - a fordításhoz szükséges forrás lista fájl
 - lib - külső library-k (log4j és derby)
 
-==================================================================================
+--------------------
 A program fordítása:
 --------------------
 javac  -d ./build -classpath "./lib/log4j-1.2.17.jar;./lib/derby-10.13.1.1.jar" @sources.txt
 
 java -cp snake.jar snake.Main 50 50
 
-==================================================================================
+------------------
 Egyéb információk:
 ------------------
 A kígyó színe zöld - az alma piros, a banán sárga, ha
